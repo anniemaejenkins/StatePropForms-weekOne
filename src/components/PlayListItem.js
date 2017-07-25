@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 
 export default class PlayListItem extends Component{
   render(){
+    // console.log('song', this.props.song);
     return(
     <div>
-      <p>Username: </p>
-      <p>Artist/Band: </p>
-      <p>Title: </p>
-      <p>Notes: </p>
+      <p>Username: {this.props.song.userName}</p>
+      <p>Artist/Band: {this.props.song.songArtist}</p>
+      <p>Title: {this.props.song.songTitle}</p>
+      <p>Notes: {this.props.song.songNotes}</p>
     </div>
     )
   }
