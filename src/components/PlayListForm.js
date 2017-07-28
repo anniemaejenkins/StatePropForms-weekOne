@@ -70,23 +70,31 @@ export default class PlayListForm extends Component{
     return(
       // value = this.state.userName is referring to the component at the top
       // and how state is an object and reassigns whatever the value of this input will be
-      <div>
-      <form onSubmit={this._addToList}>
-        <label>Username:</label>
-        <input name="username" type="text" value={this.state.userName} onChange={this._handleUsername}/>
+      <div className="theForm">
+        <form className="form-horizontal"  onSubmit={this._addToList}>
+          <div>
+            <label>Username:</label>
+            <input name="username" type="text" value={this.state.userName} onChange={this._handleUsername}/>
+          </div>
 
-        <label>Artist/Band:</label>
-        <input name="band" type="text" value={this.state.songArtist} onChange={this._handleSongArtist}/>
+          <div>
+            <label>Artist/Band:</label>
+            <input name="band" type="text" value={this.state.songArtist} onChange={this._handleSongArtist}/>
+          </div>
 
-        <label>Song Title:</label>
-        <input name="song" type="text" value={this.state.songTitle} onChange={this._handleSongTitle}/>
+          <div>
+            <label>Song Title:</label>
+            <input name="song" type="text" value={this.state.songTitle} onChange={this._handleSongTitle}/>
+          </div>
 
-        <label>Notes about Song:</label>
-        <textarea name="notes" value={this.state.songNotes} onChange={this._handleSongNotes}/>
+          <div>
+            <label>Notes about Song:</label>
+            <textarea name="notes" value={this.state.songNotes} onChange={this._handleSongNotes}/>
+          </div>
 
-        <input name="submit" className="btn btn-default" type="submit"/>
+          <input name="submit" className="btn btn-default" type="submit"/>
 
-      </form>
+        </form>
       </div>
     );
   }

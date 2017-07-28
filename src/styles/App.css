@@ -1,24 +1,22 @@
 .App {
   text-align: center;
+  background-color: #DAFDE1;
+  padding: 0 0 20px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.jumbotron {
+  background-color: #C0FFF8;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+.form-group {
+  background-color: #FFF7C6;
+  margin: 50px;
+  border-radius: 5px;
+}
+.btn {
+  background-color: #FFE0EB;
+}
+.theForm {
+  background-color: #529A86;
+  margin: 50px;
   padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  border-radius: 5px;
 }
